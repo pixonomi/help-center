@@ -1,0 +1,225 @@
+/********* BASIC RESET ********/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --white: #fff;
+  --gray: #bbb9b9;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+/********* TYPOGRAPHY *********/
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  position: relative;
+  background-color: var(--gray);
+}
+
+/******** HEADER SECTION ************/
+header {
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 50%,
+    rgba(2, 0, 36, 1) 100%
+  );
+
+  text-align: center;
+  height: 250px;
+}
+
+header h1 {
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-wrap: balance;
+  padding-top: 80px;
+  font-size: 40px;
+}
+
+/********* BODY CONTAINER **********/
+
+.body-container {
+  position: relative;
+}
+
+.body-container .cards {
+  margin-top: 50px;
+}
+
+.body-container .cards h2 {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.body-container .card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.body-container .card-inner a {
+  background-color: var(--white);
+  margin-bottom: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 80%;
+}
+
+.card-icon {
+  font-size: 50px;
+  color: #203356;
+  transition: all 0.3s ease-in-out;
+}
+
+.body-container .card-inner a h3 {
+  color: #000;
+  padding-top: 20px;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+/* .body-container .card-inner a:hover {
+  box-shadow: 10px 10px 5px grey;
+  padding: 30px;
+}
+
+.body-container .card-inner a:hover .card-icon {
+  font-size: 80px;
+}
+
+.body-container .card-inner a:hover h3 {
+  font-size: 22px;
+} */
+
+@media only screen and (min-width: 760px) {
+  .body-container .card-inner {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 30px;
+    margin: 30px 70px 20px 70px;
+  }
+
+  .body-container .card-inner a {
+    padding: 45px 35px 45px 35px;
+    width: 100%;
+  }
+
+  .body-container .card-inner a h3 {
+    font-size: 23px;
+    padding-top: 30px;
+  }
+
+  .card-icon {
+    font-size: 60px;
+  }
+
+  /* .body-container .card-inner a:hover {
+    padding: 55px 45px 55px 45px;
+  }
+
+  .body-container .card-inner a:hover h3 {
+    font-size: 30px;
+  } */
+}
+
+@media only screen and (min-width: 1200px) {
+  .body-container .card-inner {
+    gap: 50px;
+    margin: 40px 130px 20px 130px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .body-container .cards h2 {
+    font-size: 30px;
+  }
+
+  .body-container .card-inner a {
+    padding: 60px 45px 60px 45px;
+  }
+
+  .card-icon {
+    font-size: 70px;
+  }
+
+  .body-container .card-inner a h3 {
+    /* font-size: 25px; */
+    padding-top: 45px;
+  }
+
+  /* .body-container .card-inner a:hover .card-icon {
+    font-size: 90px;
+  } */
+
+  /* .body-container .card-inner a:hover {
+    padding: 70px 45px 70px 45px;
+  } */
+
+  /* .body-container .card-inner a:hover h3 {
+    font-size: 28px;
+    font-weight: 500;
+  } */
+}
+
+@media only screen and (min-width: 1400px) {
+  header h1 {
+    font-size: 70px;
+  }
+
+  .body-container .cards h2 {
+    font-size: 40px;
+  }
+
+  .body-container .card-inner a h3 {
+    font-size: 30px;
+  }
+
+  /* .body-container .card-inner a:hover h3 {
+    font-size: 35px;
+  } */
+}

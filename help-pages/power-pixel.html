@@ -1,0 +1,171 @@
+<!DOl>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installing The PowerPixel</title>
+
+    <!-- Link to Pixonomi Favicon -->
+
+    <!-- Link to Normalize css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Link to font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- Link to stylesheet -->
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/help-pages/power-pixel.css">
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>Installing The PowerPixel <span>⚡</span></h1>
+      </header>
+      <section class="body-container">
+        <h2>General PowerPixel Installation Instructions</h2>
+        <p>
+          Go to your website and paste the following code in the header of your
+          website. Make sure the pixel is applied globally or added to every
+          page you want the pixel to track.
+        </p>
+        <img src="/images/powerpixel-1.png" alt="Installing powerpixel-1" />
+        <div class="wix">
+          <h3>Wix</h3>
+          <p>
+            Log in to Wix and select Edit Site. Once the site editor loads,
+            click Search in the upper righthand corner and search for
+            "tracking." This will pull up Wix's tracking tools. Click Tracking
+            Tools in the Dashboard section.
+          </p>
+          <p>
+            Once that's loaded, click the Add Code link in the Head section to
+            add the code to your site. A dialogue window will pop up with a text
+            field. Paste the code, then close the dialog window. Next, click
+            Publish.
+          </p>
+        </div>
+        <div class="wordpress">
+          <h3>WordPress</h3>
+
+          <h4>Option 1: Use a plugin</h4>
+          <ol>
+            <li>
+              Install the plugin: Header and Footer.
+              (https://wordpress.org/plugins/header-footer/)
+            </li>
+            <li>Go to the configuration panel of the plugin.</li>
+            <li>
+              Under the "Page head and footer" tab, add the PowerPixel code to
+              the section which says "Code to be added to the HEAD section of
+              every page"
+            </li>
+          </ol>
+          <img
+            src="/images/powerpixel-2.png"
+            alt="Installing power pixel on wordpress"
+          />
+
+          <h4>Option 2: Add directly to the header.php file</h4>
+          <ol>
+            <li>Go to "Appearance", then "Theme Editor", then "header.php".</li>
+            <li>Search for < head>.</li>
+            <li>Paste the PowerPixel code by right clicking under the <head> tag.</li>
+            <li> Save the code by clicking "Update File".</li>
+            <img src="/images/powerpixel-3.png" alt="">
+          </ol>
+
+          <h4>Option 3: Add directly to the header.php file alternative</h4>
+          <ol>
+            <li> Go to Settings > Theme Editor in your WordPress admin.</li>
+            <li> Open the header.php file.</li>
+            <li>Paste the PowerPixel code into the header.php file, just before the closing </head> tag</li>
+            <li>. Save the header.php file.</li>
+          </ol>
+        </div>
+        <div class="bigcormmerce">
+          <h3>BigCommerce</h3>
+          <h4>Using Global Regions</h4>
+          <ol>
+            <li>Log into BigCommerce, then navigate to Storefront > Themes. Find your current theme and click the Customize button for that theme.</li>
+            <li>The best way to place the PowerPixel pixel is to use the global region in the header.</li>
+            <li>Click the HTML widget and drag it to the global region in the header. Then clear out the default contents of the widget, and add the PowerPixel code. Then click Save HTML.</li>
+            <li>Click the HTML widget and drag it to the global region in the header. Then clear out the default contents of the widget, and add the PowerPixel code. Then click Save HTML.</li>
+          </ol>
+        </div>
+        <div class="script-manager">
+          <h3>Script Manager</h3>
+          <ol>
+            <li>Access the Script Manager - go to Storefront › Script Manager.</li>
+            <li>To add a script, click Create a Script.</li>
+            <li>Name your script something easy to identify e.g. ‘Pixonomi tracking</li>
+            <li>Select ‘Head’ for Location on page</li>
+            <li>Select ‘All pages’ for Select pages where script will be added</li>
+            <li>Select either ‘Essential’ or ‘Functional’ for Script Category</li>
+            <>Select ‘Script’ for Script>
+            <li> Paste your PowerPixel code in the Script contents box</li>
+          </ol>
+        </div>
+        <div class="go-daddy">
+          <h3>GoDaddy</h3>
+          <ol>
+            <li>Log in to GoDaddy and select My Products. From the list of websites, choose the website you'd like to add the PowerPixel to. Once the site loads, click the Edit Website button.</li>
+            <li>
+              Unfortunately, there's no way to place a third-party tag easily in GoDaddy. The best way to do
+              it is to add an HTML section at the top of your website
+            </li>
+            <li>
+               Scroll to the top of your website and click the plus sign (+) to add a section. For the sectionoose HTML.
+            </li>
+            <li>
+              This will pull up an HTML widget that you can add to the page. Click the Add button, and
+              once the section loads, go to the Custom Code section. Then, paste the PowerPixel code there,
+              and click Done.
+            </li>
+            <li>
+              Then click Publish.
+            </li>
+          </ol>
+        </div>
+        <div class="shopify">
+          <h3>Shopify</h3>
+          <p>
+            Go to your Shopify store’s admin panel first and go to the “Themes” section. Click on the “Edit
+            code” of your store’s theme.
+          </p>
+          <img src="/images/powerpixel-4.png" alt="">
+          <p>
+            Go to the header section of your Shopify store’s theme from the theme.liquid part. Enter your
+            PowerPixel code between < head> and </ head> tags so that it will be located in the middle of
+            your theme’s header code. Click on the “Save” button when you are finished
+          </p>
+          <img src="/images/powerpixel-5.png" alt="">
+        </div>
+        <div class="advanced">
+          <h3>Advanced - Google Tag Manager</h3>
+          <p>
+            Paste PowerPixel code inside the <HEAD/> section of your website OR inside Google Tag
+            Manager inside ALL pages.
+          </p>
+          <img src="/images/powerpixel-6.png" alt="">
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

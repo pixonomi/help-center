@@ -1,0 +1,125 @@
+body {
+  background-color: #fff;
+  position: relative;
+}
+.body-container {
+  padding: 30px 0px 20px 30px;
+  text-wrap: balance;
+}
+
+.answer-img {
+  padding-left: 50%;
+  transform: translateX(-30%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.body-container .quick-start-menu .quick-start {
+  display: grid;
+  grid-template-columns: 6fr 0.5fr;
+  gap: 2.5rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 25px 0px;
+}
+
+.body-container .quick-start-menu .quick-start a {
+  color: rgba(60, 94, 243, 0.938);
+}
+
+.body-container .quick-start-menu .quick-start a h3 {
+  font-size: 1.6rem;
+}
+
+.body-container .quick-start-menu .quick-start .answer {
+  padding: 15px 5px 10px 10px;
+ 
+}
+
+.hidden{
+     display: none;
+}
+
+.body-container .quick-start-menu .quick-start .answer .each-answer {
+  margin-top: 10px;
+}
+
+.privacy-policy {
+  padding-left: 20px;
+}
+
+.body-container .quick-start-menu .quick-start .answer .each-answer h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.body-container
+  .quick-start-menu
+  .quick-start
+  .answer
+  .each-answer
+  .each-answer-header {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.body-container .quick-start-menu .quick-start #quick-start-3 .each-answer h3 {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.body-container
+  .quick-start-menu
+  .quick-start
+  #quick-start-3
+  .each-answer
+  .special {
+  padding-left: 10px;
+}
+
+.body-container .quick-start-menu .quick-start .answer .each-answer ul {
+  padding-left: 10px;
+}
+
+.body-container .quick-start-menu .quick-start .answer .each-answer ul p {
+  text-decoration: underline;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.body-container .quick-start-menu .quick-start .answer .each-answer ul li {
+  padding-bottom: 5px;
+}
+
+.arrow-down {
+  padding-top: 10px;
+}
+
+.clicked-arrow-down{
+    transform: rotate(180deg);
+}
+
+
+@media only screen and (min-width: 760px) {
+  .body-container {
+    padding: 30px 60px 20px 30px;
+  }
+  .body-container .quick-start-menu .quick-start {
+    grid-template-columns: 5fr 1.5fr;
+  }
+
+  .body-container .quick-start-menu .quick-start .answer {
+    padding: 15px 20px 20px 60px;
+    /* display: none; */
+  }
+  .body-container .quick-start-menu .quick-start .answer {
+    padding: 15px 10px 20px 20px;
+    /* display: none; */
+  }
+  .body-container .quick-start-menu .quick-start .answer .each-answer ul {
+  padding-left: 100px;
+}
+
+
+
+}

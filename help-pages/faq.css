@@ -1,0 +1,78 @@
+body {
+  background-color: #fff;
+  position: relative;
+}
+.body-container {
+  padding: 30px 60px 20px 30px;
+  /* position: absolute;
+  left: 20%;
+  transform: translateX(-20%); */
+
+}
+
+.body-container h1{
+  font-size: 2rem;
+}
+
+.body-container h3{
+  font-size: 1.4rem;
+}
+
+.body-container p{
+  font-size: 1rem;
+  /* max-width: 90%; */
+}
+
+.body-container .faq-container .faq {
+  display: grid;
+  grid-template-columns: 6fr 0.5fr;
+  gap: 2.5rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 25px 0px;
+}
+
+#quest-icon{
+  padding-top: 10px;
+}
+
+
+.body-container .faq-container .faq  h3{
+  color: rgba(60, 94, 243, 0.938);
+  padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.body-container .faq-container .faq .answer{
+  padding-left: 20px;
+
+}
+.hidden{
+    display: none;
+}
+
+.body-container .faq-container .faq .answer .each-answer p {
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+
+.body-container .faq-container .faq .answer .each-answer h3{
+  padding-bottom: 5px;
+}
+
+.body-container .faq-container .faq .answer .each-answer ul {
+  padding-left: 20px;
+}
+.body-container .faq-container .faq .answer .each-answer span{
+  color: rgb(245, 72, 28);
+}
+
+.expanded{
+    transform: rotate(180deg);
+}
+.clicked{
+    color: hsl(238, 29%, 16%);
+}
+
+@media only screen and (min-width: 760px){
+
+}
